@@ -41,7 +41,8 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
   gem 'database_cleaner'
-  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'ffaker'
 end
 
 group :development do
@@ -52,3 +53,6 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'shoulda-matchers', require: false
+end

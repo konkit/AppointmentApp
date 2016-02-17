@@ -1,9 +1,10 @@
-= simple_form_for(@patient) do |f|
-  = f.error_notification
+.container
+  = simple_form_for(@patient) do |f|
+    = f.error_notification
 
-  .form-inputs
-    = f.input :name
-    = f.input :money_amount
+    .form-inputs
+      = f.input :name
+      = f.input :money_amount
 
-  .form-actions
-    = f.button :submit
+    .form-actions
+      = f.button :submit
