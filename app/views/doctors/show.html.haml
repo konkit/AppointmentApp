@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @doctor.name
+%p
+  %b Hourly rate:
+  = @doctor.hourly_rate
+%p
+  %b Hours per week:
+  = @doctor.hours_per_week
+
+= link_to 'Edit', edit_doctor_path(@doctor)
+\|
+= link_to 'Back', doctors_path
